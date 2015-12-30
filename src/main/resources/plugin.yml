@@ -1,0 +1,11 @@
+name: SFChat
+version: 1.0
+author: xgh69
+main: me.xgh69.sfchat.main.SFChat
+commands:
+  sfchat:
+    aliases: [chat, c]
+    description: Manage chat.
+permissions:
+  sfchat.admin:
+    default: op

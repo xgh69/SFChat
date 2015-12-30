@@ -1,0 +1,9 @@
+# Konfiguracja SanFierro Chat
+# Stworzona przez: xgh69
+messages:
+  join-message: '&fSan&9Fierro&f&l: &7$player&7 wszedl do gry.'
+  quit-message: '&fSan&9Fierro&f&l: &7$player&7 wyszedl z gry.'
+  chat-disable: '&fSan&9Fierro&f&l: &7Chat zostal wylaczony przez $player.'
+  chat-locked: '&fSan&9Fierro&f&l: &7Chat jest zablokowany.'
+  chat-enable: '&fSan&9Fierro&f&l: &7Chat zostal wlaczony przez $player.'
+users:
