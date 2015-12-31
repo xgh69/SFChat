@@ -17,7 +17,7 @@ public final class SFChat extends JavaPlugin
 	private File configFile = new File("plugins" + File.separator + NAME + File.separator + "config.yml");
 	
 	public static final String NAME = "SFChat";
-	public static final String VERION = "1.0";
+	public static final String VERION = "1.1";
 	
 	public static SFChat getInstance()
 	{

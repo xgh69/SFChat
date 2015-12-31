@@ -6,4 +6,10 @@ messages:
   chat-disable: '&fSan&9Fierro&f&l: &7Chat zostal wylaczony przez $player.'
   chat-locked: '&fSan&9Fierro&f&l: &7Chat jest zablokowany.'
   chat-enable: '&fSan&9Fierro&f&l: &7Chat zostal wlaczony przez $player.'
+  chat-clear: '&fSan&9Fierro&f&l: &7Chat zostal wyczyszczony przez $player.'
+  no-perm: '&fSan&9Fierro&f&l: &7Musisz miec przynajmniej range &9ChatMod&7.'
+  usage: '&fSan&9Fierro&f&l: &7Poprawne uzycie: /chat enable | disable | join <enable | disable>'
+  chat-join-enable: '&fSan&9Fierro&f&l: &7Wlaczono wiadomosci przy dolaczaniu do serwera.'
+  chat-join-disable: '&fSan&9Fierro&f&l: &7Wylaczono wiadomosci przy dolaczaniu do serwera.'
+  chat-join-console: '&fSan&9Fierro&f&l: &7Blad.'
 users:

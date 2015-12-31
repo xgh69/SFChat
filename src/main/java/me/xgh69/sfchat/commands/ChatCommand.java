@@ -21,7 +21,7 @@ public class ChatCommand implements CommandExecutor
 	{
 		if(!sender.hasPermission("sfchat.admin"))
 		{
-			sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Musisz miec przynajmniej range &9ChatMod&7."));
+			sender.sendMessage(plugin.getUtils().getMessage("no-perm"));
 			return true;
 		}
 		
@@ -49,13 +49,13 @@ public class ChatCommand implements CommandExecutor
 					}
 				}
 				
-				Bukkit.broadcastMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Chat zostal wyczyszczony przez $player.").replace("$player", sender.getName()));
+				Bukkit.broadcastMessage(plugin.getUtils().getMessage("chat-clear").replace("$player", sender.getName()));
 				
 				return true;
 			}
 			else
 			{
-				sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Poprawne uzycie: /chat enable | disable | join <enable | disable>"));
+				sender.sendMessage(plugin.getUtils().getMessage("usage"));
 				return true;
 			}
 		}
@@ -67,13 +67,13 @@ public class ChatCommand implements CommandExecutor
 				{
 					if(sender instanceof Player)
 					{
-						sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Wlaczono wiadomosci przy dolaczaniu do serwera."));
+						sender.sendMessage(plugin.getUtils().getMessage("chat-join-enable"));
 						plugin.getUtils().setVisible(sender.getName(), true);
 						return true;
 					}
 					else
 					{
-						sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Blad."));
+						sender.sendMessage(plugin.getUtils().getMessage("chat-join-console"));
 						return true;
 					}
 				}
@@ -81,31 +81,31 @@ public class ChatCommand implements CommandExecutor
 				{
 					if(sender instanceof Player)
 					{
-						sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Wylaczono wiadomosci przy dolaczaniu do serwera."));
+						sender.sendMessage(plugin.getUtils().getMessage("chat-join-disable"));
 						plugin.getUtils().setVisible(sender.getName(), false);
 						return true;
 					}
 					else
 					{
-						sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Blad."));
+						sender.sendMessage(plugin.getUtils().getMessage("chat-join-console"));
 						return true;
 					}
 				}
 				else
 				{
-					sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Poprawne uzycie: /chat enable | disable | join <enable | disable>"));
+					sender.sendMessage(plugin.getUtils().getMessage("usage"));
 					return true;
 				}
 			}
 			else
 			{
-				sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Poprawne uzycie: /chat enable | disable | join <enable | disable>"));
+				sender.sendMessage(plugin.getUtils().getMessage("usage"));
 				return true;
 			}
 		}
 		else
 		{
-			sender.sendMessage(plugin.getUtils().fixColors("&fSan&9Fierro&f&l: &7Poprawne uzycie: /chat enable | disable | join <enable | disable>"));
+			sender.sendMessage(plugin.getUtils().getMessage("usage"));
 			return true;
 		}
 	}

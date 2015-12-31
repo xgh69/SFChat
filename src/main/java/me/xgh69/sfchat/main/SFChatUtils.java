@@ -44,7 +44,7 @@ public class SFChatUtils
 		s = s.replace(".", "_");
 		if(!plugin.getConfig().contains("messages." + s))
 		{
-			return fixColors("&fSan&9Fierro&f&l: &7Nie znaleziono wiadomosci.");
+			return fixColors("&fSF&9Chat&f&l: &7Nie znaleziono wiadomosci. Usun plik config.yml");
 		}
 		
 		return fixColors(plugin.getConfig().getString("messages." + s));
